@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 907c503be42001948ab06ec75df6bf16
+=======
+guid: d54bbd1799b6b1e448fc9b2c46c138fb
+>>>>>>> origin/Kristian
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
