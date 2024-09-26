@@ -502,7 +502,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 896104774}
-  playerSpeed: 50
+  playerSpeed: 10
   cameraSpeed: 300
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
