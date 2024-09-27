@@ -5,6 +5,7 @@ public class MonsterController : MonoBehaviour
 {
     Transform arrival;
     NavMeshAgent navMeshAgent;
+    readonly float stoppingDistance = 0.01f;
 
     void Start()
     {
@@ -15,5 +16,11 @@ public class MonsterController : MonoBehaviour
     void Update()
     {
         navMeshAgent.destination = arrival.position;
+        navMeshAgent.stoppingDistance = stoppingDistance;
+
+        if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance && !navMeshAgent.pathPending)
+        {
+            Destroy(gameObject);
+        }
     }
 }
