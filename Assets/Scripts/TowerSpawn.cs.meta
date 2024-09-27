@@ -3,7 +3,12 @@ guid: 5e82413cb4835dd499f901bae53f33c5
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - pfTowerLv1: {fileID: 6254450596112928942, guid: 1df5043c2b2a4c34eaf3f35a68091f88, type: 3}
+  - pfTowerLv2: {fileID: 9066536808067204718, guid: 0b5c886b8a9089a4a85252cb820e980a, type: 3}
+  - pfTowerLv3: {fileID: 3615467762403406641, guid: 4667d77abde1ad84f878c98e6404ae7d, type: 3}
+  - pfTowerLv4: {fileID: 9081658978085840745, guid: 423e473bb3b97134a8b4fd6f508b2e0d, type: 3}
+  - towerSpawn: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
