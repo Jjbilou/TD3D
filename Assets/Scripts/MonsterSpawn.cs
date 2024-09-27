@@ -3,21 +3,26 @@ using UnityEngine;
 
 public class MonsterSpawn : MonoBehaviour
 {
-    [SerializeField] GameObject monster;
-
-    readonly float spawnInterval = 5.0f;
+    [SerializeField] GameObject baseMonster;
 
     void Start()
     {
-        StartCoroutine(SpawnCycle(spawnInterval));
-
+        SpawnMonsters(5, 5.0f, "baseMonster");
     }
 
-    IEnumerator SpawnCycle(float interval)
+    public void SpawnMonsters(int number, float interval, string monsterName)
     {
-        yield return new WaitForSeconds(5.0f);
+        switch (monsterName)
+        {
+            default:
+                StartCoroutine(SpawnEnumerator(number, interval, baseMonster));
+                break;
+        }
+    }
 
-        while (true)
+    IEnumerator SpawnEnumerator(int number, float interval, GameObject monster)
+    {
+        for (int i = 0; i < number; i++)
         {
             Instantiate(monster, transform.position, Quaternion.identity);
 
