@@ -261,6 +261,7 @@ GameObject:
   - component: {fileID: 341634751}
   - component: {fileID: 341634750}
   - component: {fileID: 341634749}
+  - component: {fileID: 341634752}
   m_Layer: 0
   m_Name: Spawn
   m_TagString: Untagged
@@ -355,6 +356,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341634747}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &341634752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341634747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a87086222ea6a64b832c8a847a5f85a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monster: {fileID: 7512517964431791176, guid: 0490e2136905c5e4c997e316a01d7f91, type: 3}
 --- !u!1 &543669296
 GameObject:
   m_ObjectHideFlags: 0
@@ -419,7 +433,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: d1acf90352595fa458c3adf0631cbc4f, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 2c82622d03a4a1d44aa7f6b885ea4027, type: 2}
   m_BuildHeightMesh: 0
 --- !u!1 &690054651
 GameObject:
@@ -633,63 +647,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 698341503}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &784300237
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7512517964431791176, guid: 0490e2136905c5e4c997e316a01d7f91, type: 3}
-      propertyPath: m_Name
-      value: BaseMonster
-      objectReference: {fileID: 0}
-    - target: {fileID: 8345052454943611406, guid: 0490e2136905c5e4c997e316a01d7f91, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -40
-      objectReference: {fileID: 0}
-    - target: {fileID: 8345052454943611406, guid: 0490e2136905c5e4c997e316a01d7f91, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8345052454943611406, guid: 0490e2136905c5e4c997e316a01d7f91, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8345052454943611406, guid: 0490e2136905c5e4c997e316a01d7f91, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8345052454943611406, guid: 0490e2136905c5e4c997e316a01d7f91, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8345052454943611406, guid: 0490e2136905c5e4c997e316a01d7f91, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8345052454943611406, guid: 0490e2136905c5e4c997e316a01d7f91, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8345052454943611406, guid: 0490e2136905c5e4c997e316a01d7f91, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8345052454943611406, guid: 0490e2136905c5e4c997e316a01d7f91, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8345052454943611406, guid: 0490e2136905c5e4c997e316a01d7f91, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0490e2136905c5e4c997e316a01d7f91, type: 3}
 --- !u!1 &825135882
 GameObject:
   m_ObjectHideFlags: 0
@@ -1673,5 +1630,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 543669297}
   - {fileID: 1370298589}
-  - {fileID: 784300237}
   - {fileID: 886741707}
