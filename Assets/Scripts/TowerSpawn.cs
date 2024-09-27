@@ -19,22 +19,15 @@ public class TowerSpawn : MonoBehaviour
     private bool checkT3 = false;
     private bool checkT4 = false;
 
-    // Start is called before the first frame update
     void Start()
     {
         rend = GetComponent<Renderer>();
         rend.enabled = true;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    
-    }
-
     void OnTriggerStay()
     {
-        if (Input.GetKeyDown("e"))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             if (!checkT1)
             {

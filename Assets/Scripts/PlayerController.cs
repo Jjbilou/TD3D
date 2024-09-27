@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
@@ -10,8 +7,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float playerSpeed = 5.0f;
     [SerializeField] float cameraSpeed = 300.0f;
 
-
-    // Start is called before the first frame update
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -19,7 +14,6 @@ public class PlayerController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-    // Update is called once per frame
     void Update()
     {
         float angle = mainCamera.localEulerAngles.y * Mathf.PI / 180.0f;
