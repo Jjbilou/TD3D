@@ -556,7 +556,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1498681659}
   m_Layer: 0
-  m_Name: TowerSpawn
+  m_Name: TowerSpawns
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -583,42 +583,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6254450596112928942, guid: 1df5043c2b2a4c34eaf3f35a68091f88, type: 3}
   m_PrefabInstance: {fileID: 7704450488410809113}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1969205499
+--- !u!1 &1969205499 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 901663436626392807, guid: 3203ad7bcf3f091408ac11f4582f7e8a, type: 3}
+  m_PrefabInstance: {fileID: 3782046899001811095}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1969205500}
-  - component: {fileID: 1969205503}
-  - component: {fileID: 1969205502}
-  - component: {fileID: 1969205501}
-  - component: {fileID: 1969205504}
-  m_Layer: 0
-  m_Name: TS1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1969205500
+--- !u!4 &1969205500 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 2234578125394366936, guid: 3203ad7bcf3f091408ac11f4582f7e8a, type: 3}
+  m_PrefabInstance: {fileID: 3782046899001811095}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1969205499}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20, y: 0, z: -20}
-  m_LocalScale: {x: 8, y: 1, z: 8}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1498681659}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1969205501
+--- !u!65 &1969205505
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -639,57 +614,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1969205502
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1969205499}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 6909b544a3cca58479016d786baed689, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1969205503
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1969205499}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1969205504
+--- !u!114 &1969205506
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -701,8 +626,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e82413cb4835dd499f901bae53f33c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BaseTower: {fileID: 1671088413}
-  towerSpawn: {fileID: 1969205500}
+  pfTowerLv1: {fileID: 6254450596112928942, guid: 1df5043c2b2a4c34eaf3f35a68091f88, type: 3}
+  pfTowerLv2: {fileID: 9066536808067204718, guid: 0b5c886b8a9089a4a85252cb820e980a, type: 3}
+  pfTowerLv3: {fileID: 3615467762403406641, guid: 4667d77abde1ad84f878c98e6404ae7d, type: 3}
+  pfTowerLv4: {fileID: 9081658978085840745, guid: 423e473bb3b97134a8b4fd6f508b2e0d, type: 3}
 --- !u!1 &2070294468
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,7 +645,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2070294469
 Transform:
   m_ObjectHideFlags: 0
@@ -792,6 +719,89 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0490e2136905c5e4c997e316a01d7f91, type: 3}
+--- !u!1001 &3782046899001811095
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1498681659}
+    m_Modifications:
+    - target: {fileID: 901663436626392807, guid: 3203ad7bcf3f091408ac11f4582f7e8a, type: 3}
+      propertyPath: m_Name
+      value: TowerSpawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234578125394366936, guid: 3203ad7bcf3f091408ac11f4582f7e8a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234578125394366936, guid: 3203ad7bcf3f091408ac11f4582f7e8a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234578125394366936, guid: 3203ad7bcf3f091408ac11f4582f7e8a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234578125394366936, guid: 3203ad7bcf3f091408ac11f4582f7e8a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234578125394366936, guid: 3203ad7bcf3f091408ac11f4582f7e8a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234578125394366936, guid: 3203ad7bcf3f091408ac11f4582f7e8a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234578125394366936, guid: 3203ad7bcf3f091408ac11f4582f7e8a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234578125394366936, guid: 3203ad7bcf3f091408ac11f4582f7e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234578125394366936, guid: 3203ad7bcf3f091408ac11f4582f7e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234578125394366936, guid: 3203ad7bcf3f091408ac11f4582f7e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3078483427135251455, guid: 3203ad7bcf3f091408ac11f4582f7e8a, type: 3}
+      propertyPath: BaseTower
+      value: 
+      objectReference: {fileID: 1671088413}
+    - target: {fileID: 3078483427135251455, guid: 3203ad7bcf3f091408ac11f4582f7e8a, type: 3}
+      propertyPath: towerSpawn
+      value: 
+      objectReference: {fileID: 1969205500}
+    - target: {fileID: 4954589417513763951, guid: 3203ad7bcf3f091408ac11f4582f7e8a, type: 3}
+      propertyPath: m_Size.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954589417513763951, guid: 3203ad7bcf3f091408ac11f4582f7e8a, type: 3}
+      propertyPath: m_Size.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954589417513763951, guid: 3203ad7bcf3f091408ac11f4582f7e8a, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 901663436626392807, guid: 3203ad7bcf3f091408ac11f4582f7e8a, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 1969205505}
+    - targetCorrespondingSourceObject: {fileID: 901663436626392807, guid: 3203ad7bcf3f091408ac11f4582f7e8a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1969205506}
+  m_SourcePrefab: {fileID: 100100000, guid: 3203ad7bcf3f091408ac11f4582f7e8a, type: 3}
 --- !u!1001 &7704450488410809113
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -842,7 +852,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6254450596112928942, guid: 1df5043c2b2a4c34eaf3f35a68091f88, type: 3}
       propertyPath: m_Name
-      value: BaseTower
+      value: TowerLv1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

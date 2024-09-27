@@ -220,7 +220,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5292089227074105921}
   m_Layer: 0
-  m_Name: BaseTower
+  m_Name: TowerLv1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
