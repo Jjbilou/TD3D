@@ -7,17 +7,17 @@ public class TowerSpawn : MonoBehaviour
     [SerializeField] GameObject pfTowerLv3;
     [SerializeField] GameObject pfTowerLv4;
 
-    private Renderer rend;
+    Renderer rend;
 
-    private GameObject GameObjectT1;
-    private GameObject GameObjectT2;
-    private GameObject GameObjectT3;
-    private GameObject GameObjectT4;
+    GameObject GameObjectT1;
+    GameObject GameObjectT2;
+    GameObject GameObjectT3;
+    GameObject GameObjectT4;
 
-    private bool checkT1 = false;
-    private bool checkT2 = false;
-    private bool checkT3 = false;
-    private bool checkT4 = false;
+    bool checkT1 = false;
+    bool checkT2 = false;
+    bool checkT3 = false;
+    bool checkT4 = false;
 
     void Start()
     {
