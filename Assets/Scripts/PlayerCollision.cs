@@ -11,8 +11,7 @@ public class PlayerCollision : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        print(collision);
-        if (collision.gameObject.CompareTag(monsterTag))
+        if (collision.transform.parent.CompareTag(monsterTag))
         {
             Destroy(gameObject);
         }
