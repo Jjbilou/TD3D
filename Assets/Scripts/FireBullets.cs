@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FireBullets : MonoBehaviour
 {
-    float range = 1500000f;
+    float range = 30f;
     string enemyTag = "Monster";
     Transform target;
     float turnSpeed = 10f;
@@ -53,5 +53,11 @@ public class FireBullets : MonoBehaviour
 
         // Rotation plus fluide
         transform.rotation = Quaternion.Lerp(transform.rotation, lookRotation, Time.deltaTime * turnSpeed);
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;  // Définit la couleur du Gizmo (sphère de portée) en rouge
+        Gizmos.DrawWireSphere(transform.position, range);  // Dessine une sphère autour de la tourelle avec la portée définie
     }
 }
